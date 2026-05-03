@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Runner Credits</title>
+		<style>
+			body { margin: 0; }
+		</style>
+        <link rel="stylesheet" type="text/css" href="styles/credits.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Righteous&display=swap" rel="stylesheet">
+        
+	</head>
+	<body>
+        <audio id="sound" autoplay loop >
+            <source src="sounds/joyride.mp3" type="audio/mp3"></sources>
+        </audio>
+
+        
+
+        <div id="TOP">
+            <div id="credit-title"><img src="resources/creditTitle.png" alt="SR" /></div>
+            <h3>Brought to you by our creative team:<br> 
+                Muhammed Akoojee 2302630<br>
+                Sumairaa Mahomed 2130279<br>
+                Mohammed Patel 2332271<br>
+                Enoch Chandayengerwa 2313456 <br>
+                Zainab Manack 2304141<br>
+            </h3>
+            <br>
+            <h3>
+                The following resources have contributed to the creation of this game:<br>
+                Various sources from google images <br>
+                Sound effects: https://opengameart.org/content/<br>
+                Game Controls: <br>
+                https://youtube.com/playlist?list=PLbEtFK5YvXKXRtr-pp2_Fu34frLDoOPLI <br>
+                Models:<br>
+                https://quaternius.com/packs/simplenature.html <br>
+                https://quaternius.com/packs/cars.html  <br>
+                Multiple techniques and implementations from threejs.org
+            </h3>
+        </div>
+        
+        <div id ="Middle" class = "Options">
+                <button type ="button" id = 'home'><img src="resources/home.png" alt="SR"></button><br><br>
+            </div>
+        
+         
+            
+        
+         </div>
+	</body>
+</html>
+
+
+
+<script>
+    var sound = document.getElementById("sound");
+    sound.volume = 0.1;    
+    const home = document.getElementById('home');
+
+    home.onclick = function() {
+        window.location.href = "index.html";
+    }
+
+    if (window.localStorage.getItem('mute') === "true") {
+		sound.muted = true;
+	} 
+</script>

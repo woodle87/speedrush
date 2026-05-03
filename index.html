@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedRush_3D</title>
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+
+  <body>
+    <div id="info">
+      <div id="score-row">
+        Score:
+        <div id="score"></div>
+      </div>
+      <div id="distance-row">
+        Distance:
+        <div id="distance"></div>
+      </div>
+    </div>
+
+    <div id="intro-panel">
+      <div id="intro-column">
+        <div id="intro-title"><img src="resources/title.png" alt="SR" /></div>
+        <div>
+          <button id="controls-button" onclick="location.href='controls.html'">
+            <img src="resources/controlsButton1.png" alt="SR" />
+          </button>
+          <button id="start-button">
+            <img src="resources/start.png" alt="SR" />
+          </button>
+
+          <button id="credit-button" onclick="location.href='credits.html'">
+            <img src="resources/creditButton.png" alt="SR" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="level-up">
+      <div id="level"><img src="resources/LevelUp.png" alt="SR" /></div>
+    </div>
+    <div id="crash">
+      <div id="crash-out"><img src="resources/crash.png" alt="SR" /></div>
+    </div>
+
+    <div id="game-over-panel">
+      <div id="game-over-column">
+        <div id="game-over-title">
+          <img src="resources/over.png" alt="SR" />
+        </div>
+        <div class="tooltip">
+          &#x1F6C8;
+          <span class="tooltiptext">
+            <p>Controls:</p>
+            <p>P = Pause</p>
+            <p>V = Change View</p>
+            <p>A or Left Arrow Key or Drag Mouse Left = Turn Left</p>
+            <p>D or Right Arrow Key or Drag Mouse Right = Turn Right</p>
+
+            <p>Good Luck!!</p>
+          </span>
+        </div>
+        <div id="game-over-score-row">
+          Score:
+          <div id="game-over-score"></div>
+        </div>
+        <div id="game-over-distance-row">
+          Distance:
+          <div id="game-over-distance"></div>
+        </div>
+        <div id="game-over-high-score-row">
+          <div id="new-high">NEW!!</div>
+          High Score:
+          <div id="game-over-high-score"></div>
+          <div id="new-high_">NEW!!</div>
+        </div>
+        <button id="replay-button">
+          <img src="resources/replay.png" alt="SR" />
+        </button>
+        <button id="level-replay-button">
+          <img src="resources/level.png" alt="SR" />
+        </button>
+      </div>
+    </div>
+
+    <div id="pause-panel">
+      <div id="pause-column">
+        <div id="pause-title"><img src="resources/pause.png" alt="SR" /></div>
+        <div class="tooltip">
+          &#x1F6C8;
+          <span class="tooltiptext">
+            <p>Controls:</p>
+            <p>P = Pause</p>
+            <p>V = Change View</p>
+            <p>A or Left Arrow Key or Drag Mouse Left = Turn Left</p>
+            <p>D or Right Arrow Key or Drag Mouse Right = Turn Right</p>
+
+            <p>Good Luck!!</p>
+          </span>
+        </div>
+        <div id="paused-score-row">
+          Score:
+          <div id="pause-score"></div>
+        </div>
+        <div id="paused-distance-row">
+          Distance:
+          <div id="pause-distance"></div>
+        </div>
+        <div id="paused-high-score-row">
+          High Score:
+          <div id="pause-high-score"></div>
+        </div>
+        <button id="continue-button">
+          <img src="resources/continue.png" alt="SR" />
+        </button>
+        <button id="replay-button-pause">
+          <img src="resources/replay.png" alt="SR" />
+        </button>
+        <!--<button id="level-select-button-pause"><img src="resources/level.png" alt="SR"></button>-->
+      </div>
+    </div>
+
+    <div id="menu-holder">
+      <nav class="menu">
+        <img src="http://i.stack.imgur.com/kx8MT.gif" />
+
+        <input checked="checked" class="menu-toggler" type="checkbox" />
+        <label for="menu-toggler"></label>
+        <ul>
+          <li class="menu-item" id="easy">
+            <a>Easy</a>
+          </li>
+          <li class="menu-item" id="med">
+            <a>Med</a>
+          </li>
+          <li class="menu-item" id="hard">
+            <a>Hard</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

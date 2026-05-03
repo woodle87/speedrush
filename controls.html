@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Runner How To Play</title>
+		<style>
+			body { margin: 0; }
+		</style>
+        <link rel="stylesheet" type="text/css" href="styles/credits.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Righteous&display=swap" rel="stylesheet">
+        
+	</head>
+	<body>
+        <audio id="sound" autoplay loop>
+            <source src="sounds/joyride.mp3" type="audio/mp3"></audio>
+        </audio>
+        
+
+        <div id="TOP">
+            ><img src="resources/controlsHeading.png" alt="SR">
+            <h3> Avoid the Traffic!!</h3>
+            <h3>Here are the simple keyboard controls to get you started:</h3>
+            <h3><br> Left Arrow : Turn Left<br>
+                A : Turn Left<br> 
+                Right Arrow : Turn Right<br>
+                D : Turn Right  <br>
+                v : Change the View Point<br>
+                P : Pause <br>
+                <img src="resources/Keyboard.png" width=25% height=25% align-items=centre >
+            </h3>
+            <h3> For mouse play:<br>
+                Drag Mouse Left : Turn Left<br>
+                Drag Mouse Right : Turn Right</h3>
+            
+            <br>
+        </div>
+        
+        <div id ="Middle" class = "Options">
+            <button type ="button" id = 'home'><img src="resources/home.png" alt="SR"></button><br><br>
+         </div>
+	</body>
+</html>
+
+
+
+<script>
+  
+    const sound = document.getElementById('sound');
+    sound.volume = 0.1;    
+    const home = document.getElementById('home');
+    
+    home.onclick = function() {
+        window.location.href = "index.html";
+    }
+
+    if (window.localStorage.getItem('mute') === "true") {
+		sound.muted = true;
+	} 
+</script>
